@@ -1,6 +1,6 @@
 import time
 import datetime
-
+import random
 
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Saturday', 'Sunday']
 periods = {0: {1: {'start': '8:20', 'end': '10:10'},
