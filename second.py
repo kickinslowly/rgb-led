@@ -53,54 +53,114 @@ class SchoolSchedule:
 a = SchoolSchedule()
 
 
-def schedule_day(day):
-    if day == 'monday' or day == 'tuesday' or day == 'thursday' or day == 'friday':
-        # PRE CLASS
-        schedule.every().day.at('08:00').do(a.is_class_soon)
-        # FIRST PERIOD
-        schedule.every().day.at('08:19').do(a.is_class_time)
-        schedule.every().day.at('10:09').do(a.not_class_time)
-        # SECOND PERIOD
-        schedule.every().day.at('10:28').do(a.is_class_time)
-        schedule.every().day.at('12:18').do(a.not_class_time)
-        # THIRD PERIOD
-        schedule.every().day.at('13:07').do(a.is_class_time)
-        schedule.every().day.at('13:47').do(a.not_class_time)
-        # FOURTH PERIOD
-        schedule.every().day.at('13:50').do(a.is_class_time)
-        schedule.every().day.at('14:30').do(a.not_class_time)
-        # FIFTH PERIOD
-        schedule.every().day.at('14:33').do(a.is_class_time)
-        schedule.every().day.at('15:13').do(a.not_class_time)
-        # POST CLASS
-        schedule.every().day.at('16:00').do(a.school_out)
-    else:
-        # PRE CLASS
-        schedule.every().day.at('08:00').do(a.is_class_soon)
-        # FIRST PERIOD
-        schedule.every().day.at('08:19').do(a.is_class_time)
-        schedule.every().day.at('09:13').do(a.not_class_time)
-        # SECOND PERIOD
-        schedule.every().day.at('09:16').do(a.is_class_time)
-        schedule.every().day.at('10:09').do(a.not_class_time)
-        # THIRD PERIOD
-        schedule.every().day.at('10:28').do(a.is_class_time)
-        schedule.every().day.at('11:22').do(a.not_class_time)
-        # FOURTH PERIOD
-        schedule.every().day.at('11:25').do(a.is_class_time)
-        schedule.every().day.at('12:18').do(a.not_class_time)
-        # FIFTH PERIOD
-        schedule.every().day.at('13:07').do(a.is_class_time)
-        schedule.every().day.at('13:33').do(a.not_class_time)
-        # POST CLASS
-        schedule.every().day.at('16:00').do(a.school_out)
+def schedule_day():
+    # MONDAY
+    # PRE CLASS
+    schedule.every().monday.at('08:00').do(a.is_class_soon)
+    # FIRST PERIOD
+    schedule.every().monday.at('08:19').do(a.is_class_time)
+    schedule.every().monday.at('09:13').do(a.not_class_time)
+    # SECOND PERIOD
+    schedule.every().monday.at('09:16').do(a.is_class_time)
+    schedule.every().monday.at('10:09').do(a.not_class_time)
+    # THIRD PERIOD
+    schedule.every().monday.at('10:28').do(a.is_class_time)
+    schedule.every().monday.at('11:22').do(a.not_class_time)
+    # FOURTH PERIOD
+    schedule.every().monday.at('11:25').do(a.is_class_time)
+    schedule.every().monday.at('12:18').do(a.not_class_time)
+    # FIFTH PERIOD
+    schedule.every().monday.at('13:07').do(a.is_class_time)
+    schedule.every().monday.at('13:33').do(a.not_class_time)
+    # POST CLASS
+    schedule.every().monday.at('16:00').do(a.school_out)
+
+    # TUESDAY
+    # PRE CLASS
+    schedule.every().tuesday.at('08:00').do(a.is_class_soon)
+    # FIRST PERIOD
+    schedule.every().tuesday.at('08:19').do(a.is_class_time)
+    schedule.every().tuesday.at('09:13').do(a.not_class_time)
+    # SECOND PERIOD
+    schedule.every().tuesday.at('09:16').do(a.is_class_time)
+    schedule.every().tuesday.at('10:09').do(a.not_class_time)
+    # THIRD PERIOD
+    schedule.every().tuesday.at('10:28').do(a.is_class_time)
+    schedule.every().tuesday.at('11:22').do(a.not_class_time)
+    # FOURTH PERIOD
+    schedule.every().tuesday.at('11:25').do(a.is_class_time)
+    schedule.every().tuesday.at('12:18').do(a.not_class_time)
+    # FIFTH PERIOD
+    schedule.every().tuesday.at('13:07').do(a.is_class_time)
+    schedule.every().tuesday.at('13:33').do(a.not_class_time)
+    # POST CLASS
+    schedule.every().tuesday.at('16:00').do(a.school_out)
+
+    # WEDNESDAY
+    # PRE CLASS
+    schedule.every().wednesday.at('17:38').do(a.is_class_soon)
+    # FIRST PERIOD
+    schedule.every().wednesday.at('08:19').do(a.is_class_time)
+    schedule.every().wednesday.at('17:39').do(a.not_class_time)
+    # SECOND PERIOD
+    schedule.every().wednesday.at('10:28').do(a.is_class_time)
+    schedule.every().wednesday.at('12:18').do(a.not_class_time)
+    # THIRD PERIOD
+    schedule.every().wednesday.at('13:07').do(a.is_class_time)
+    schedule.every().wednesday.at('13:47').do(a.not_class_time)
+    # FOURTH PERIOD
+    schedule.every().wednesday.at('13:50').do(a.is_class_time)
+    schedule.every().wednesday.at('14:30').do(a.not_class_time)
+    # FIFTH PERIOD
+    schedule.every().wednesday.at('14:33').do(a.is_class_time)
+    schedule.every().wednesday.at('15:13').do(a.not_class_time)
+    # POST CLASS
+    schedule.every().wednesday.at('16:00').do(a.school_out)
+
+    # THURSDAY
+    # PRE CLASS
+    schedule.every().thursday.at('08:00').do(a.is_class_soon)
+    # FIRST PERIOD
+    schedule.every().thursday.at('08:19').do(a.is_class_time)
+    schedule.every().thursday.at('09:13').do(a.not_class_time)
+    # SECOND PERIOD
+    schedule.every().thursday.at('09:16').do(a.is_class_time)
+    schedule.every().thursday.at('10:09').do(a.not_class_time)
+    # THIRD PERIOD
+    schedule.every().thursday.at('10:28').do(a.is_class_time)
+    schedule.every().thursday.at('11:22').do(a.not_class_time)
+    # FOURTH PERIOD
+    schedule.every().thursday.at('11:25').do(a.is_class_time)
+    schedule.every().thursday.at('12:18').do(a.not_class_time)
+    # FIFTH PERIOD
+    schedule.every().thursday.at('13:07').do(a.is_class_time)
+    schedule.every().thursday.at('13:33').do(a.not_class_time)
+    # POST CLASS
+    schedule.every().thursday.at('16:00').do(a.school_out)
+
+    # FRIDAY
+    # PRE CLASS
+    schedule.every().friday.at('08:00').do(a.is_class_soon)
+    # FIRST PERIOD
+    schedule.every().friday.at('08:19').do(a.is_class_time)
+    schedule.every().friday.at('09:13').do(a.not_class_time)
+    # SECOND PERIOD
+    schedule.every().friday.at('09:16').do(a.is_class_time)
+    schedule.every().friday.at('10:09').do(a.not_class_time)
+    # THIRD PERIOD
+    schedule.every().friday.at('10:28').do(a.is_class_time)
+    schedule.every().friday.at('11:22').do(a.not_class_time)
+    # FOURTH PERIOD
+    schedule.every().friday.at('11:25').do(a.is_class_time)
+    schedule.every().friday.at('12:18').do(a.not_class_time)
+    # FIFTH PERIOD
+    schedule.every().friday.at('13:07').do(a.is_class_time)
+    schedule.every().friday.at('13:33').do(a.not_class_time)
+    # POST CLASS
+    schedule.every().friday.at('16:00').do(a.school_out)
 
 
-schedule_day('monday')
-schedule_day('tuesday')
-schedule_day('wednesday')
-schedule_day('thursday')
-schedule_day('friday')
+schedule_day()
 
 while True:
     schedule.run_pending()
